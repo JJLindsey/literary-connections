@@ -1,0 +1,23 @@
+{
+  "name": "literary-connections",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJLindsey/literary-connections.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJLindsey/literary-connections/issues"
+  },
+  "homepage": "https://github.com/JJLindsey/literary-connections#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.3.0",
+    "graphql": "^15.5.3"
+  }
+}
