@@ -11,6 +11,7 @@ module.exports = {
         let token = req.query.token || req.headers.authorization || req.body.token
 
         // ["Bearer", "<tokenvalue>"]
+        // "Bearer 123123621783126387126412874148721365237"
         if (req.headers.authorization) {
             token = token.split(' ').pop().trim();
         }
@@ -25,7 +26,7 @@ module.exports = {
             req.user = data;
         } catch {
             console.log('Invalid token');
-            return res.status(400).json({ message: 'invalid token!' });
+            // return res.status(400).json({ message: 'invalid token!' });
         }
 
         // send to next endpoint
